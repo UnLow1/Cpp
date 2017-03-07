@@ -1,0 +1,12 @@
+Klasa: Czas
+- atrybuty - h, m, s : int
+- konstruktor bezparametrowy - ustawia czas na 12:00:00,
+- konstruktor z parametrami - pozwala podać początkowe wartości godziny, minuty i sekundy (dla tej ostatniej, wartość domyślna równa 0) - dla błędnej wartości którejś z liczb, należy ustawić czas na 12:00:00,
+metody:
+- zwraca liczbę godzin,
+- pozwala dodać jedną sekundę,
+- sprawdza, czy dany czas jest równy drugiemu, przekazanemu jako parametr metody,
+- metodę wypisz, wypisującą czas na konsolę (np. "8:35:2"),
+- statyczną zmienną suma, początkowo równą zero i zwiększaną w konstruktorach o łączną liczbę sekund podawanych czasów; oraz statyczną metodę zwracającą wartość sumy,
+metody zapisz/wczytaj:
+- format: "08:35:02" (każda liczba powinna być dwucyfrowa, pomiędzy nimi dwukropki).
