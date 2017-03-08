@@ -1,2 +1,2 @@
 # Cpp
-Projects for lab in C++
+Projects for labs on studies in C++
