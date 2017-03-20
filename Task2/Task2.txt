@@ -1,0 +1,12 @@
+Plan zajêæ:
+
+[2pkt] Zaimplementuj podane na zajêciach klasy, zawieraj¹ce:
+zadane atrybuty,
+odpowiednie konstruktory, inicjalizuj¹ce atrybuty,
+[10pkt] Uzupe³nij klasy o nastêpuj¹ce operacje zdefiniowane poprzez przeci¹¿enie operatorów:
+operatory wypisywania do strumienia (funkcja zewn.),
+zadane operatory arytmetyczne, zdefiniowane jako metody klasy albo funkcje zewnêtrzne (zgodnie z instrukcj¹),
+zadany operator logiczny (metoda klasy),
+zadany operator tablicowy (metoda klasy),
+zadany operator konwersji (metoda klasy),
+[4pkt] Deklaracje klas i funkcji (wszystkich razem) powinny znaleŸæ siê w pliku nag³ówkowym "obiekty.h", definicje funkcji zewnêtrznych i metod klas w pliku Ÿród³owym "obiekty.cpp", funkcja main z kodem testowym w pliku "main.cpp".
