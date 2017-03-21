@@ -10,3 +10,26 @@ zadany operator logiczny (metoda klasy),
 zadany operator tablicowy (metoda klasy),
 zadany operator konwersji (metoda klasy),
 [4pkt] Deklaracje klas i funkcji (wszystkich razem) powinny znaleŸæ siê w pliku nag³ówkowym "obiekty.h", definicje funkcji zewnêtrznych i metod klas w pliku Ÿród³owym "obiekty.cpp", funkcja main z kodem testowym w pliku "main.cpp".
+
+
+
+
+
+Klasy:
+Punkt (trzy wspó³rzêdne typu float),
+Wektor (trzy wspó³rzêdne typu float),
+konstruktory inicjalizuj¹ atrybuty zerami lub wartoœciami podanymi na liœcie parametrów.
+Przeci¹¿one operatory:
+operatory wypisywania do strumienia (funkcja zewn.),
+operatory arytmetyczne:
+dodawanie dwóch wektorów ( w1 += w2 oraz w1+w2, m.klasy ),
+mno¿enie wektora przez liczbê ( w * f oraz f * w, f.zewn. ),
+przesuniêcie punktu o wektor ( p + w, m.klasy ),
+inkrementacja punktu - zwiêksza wartoœci wspó³rzêdnych o 1 ( ++p oraz p++, m.klasy),
+wartoœæ wektora ze zmienionym znakiem ( -w, m.klasy )
+operator logiczny:
+porównanie dwóch wektorów wed³ug ich d³ugoœci ( w1 > w2, m.klasy),
+operator tablicowy:
+dostêp do wspó³rzêdnych wektora ( w[i], m.klasy),
+operator konwersji:
+obiekt wektora rzutowany do typu float powinien zwróciæ d³ugoœæ wektora ( (float)w, m.klasy),

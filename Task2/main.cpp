@@ -4,32 +4,50 @@
 using namespace std;
 
 int main() {
-    Complex number1(3, 7), number2(3, 7), number3(2, 5);
-    cout << "number1 = " << number1 << "number2 = " << number2 << "number3 = " << number3;
+    Vector vector1(1, 2, 3), vector2(9, 1, 4), vector3;
+    cout << "\nvector1 = " << vector1 << "vector2 = " << vector2 << "vector3 = " << vector3 << endl;
 
-    Complex resultOfAddition = number1 + number3;
-    cout << "(number1 + number3) resultOfAdding = " << resultOfAddition;
+    vector3 = vector1 + vector2;
+    cout << "vector1 + vector2 = " << vector3;
 
-    if (number1 == number2) {
-        cout << "number1 == number2" << endl;
-    }
-    if (number1 != number2) {
-        cout << "number1 != number2" << endl;
-    }
-    if (number1 == resultOfAddition) {
-        cout << "number1 == resultOfAddition" << endl;
-    }
-    if (number1 != resultOfAddition) {
-        cout << "number1 != resultOfAddition" << endl;
-    }
+    cout << "vector1 = " << vector1;
 
-    Complex resultOfSubstraction = number3 - number2;
-    cout << "(number3 - number2) resultOfSubstraction = " << resultOfSubstraction;
+    vector1 += vector2;
+    cout << "vector1 += vector2 = " << vector1;
 
-    Complex negativeNumber2 = !number2;
-    cout << "negativeNumber2 = " << negativeNumber2;
+    vector1 = vector1 * 2;
+    cout << "vector1 * 2 = " << vector1;
 
-    cout << "number1 = " << number1 << "number2 = " << number2 << "number3 = " << number3;
+    vector1 = 2 * vector1;
+    cout << "2 * vector1 = " << vector1;
+
+    vector2 = -vector1;
+    cout << "-vector1 = " << vector2;
+
+    if (vector1 > vector2)
+        cout << "vector1 > vector2" << endl;
+
+    if (vector1 > vector3)
+        cout << "vector1 > vector3" << endl;
+
+    cout << "vector1[0] = " << vector1[0] << "   vector1[1] = " << vector1[1] << "   vector1[2] = " << vector1[2]
+         << endl;
+
+    cout << vector3 << endl;
+    float tmp = vector3;
+    cout << tmp << endl;
+
+    Point number1(3, 7, 10), number2(2, 5, 3), number3;
+    cout << endl << "number1 = " << number1 << "number2 = " << number2 << "number3 = " << number3 << endl;
+
+    number3 = number2 + vector1;
+    cout << "number2 + vector1 = " << number3;
+
+    ++number3;
+    cout << "++number3 = " << number3;
+
+    number3++;
+    cout << "number3++ = " << number3;
 
     return 0;
 }

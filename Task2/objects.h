@@ -5,37 +5,68 @@
 
 using namespace std;
 
-class Complex {
+class Vector {
 private:
-    int x;
-    int y;
-    int tab[];
+    float x;
+    float y;
+    float z;
 public:
-    Complex();
+    Vector(float x, float y, float z);
 
-    Complex(int x, int y);
+    Vector();
 
-    int getX() const;
+    float getX() const;
 
-    int getY() const;
+    float getY() const;
 
-    Complex operator+(const Complex &number) const;
+    float getZ() const;
 
-    bool operator==(const Complex &rhs) const;
+    Vector operator+(const Vector &vector) const;
 
-    bool operator!=(const Complex &rhs) const;
+    Vector &operator+=(const Vector &vector);
 
-//    const int &operator[](int index) const { return tab[index]; }
+    Vector operator-();
 
-    const int &operator[](int index) const;
+    const float &operator[](int index) const;
 
-    Complex operator!();
+    bool operator>(const Vector &vector) const;
 
-    operator Complex();
+    operator float();
 };
 
-Complex operator-(const Complex &a, const Complex &b);
+ostream &operator<<(ostream &out, const Vector &vector);
 
-ostream &operator<<(ostream &out, const Complex &complex);
+Vector operator*(const Vector &vector, const float &number);
+
+Vector operator*(const float &number, const Vector &vector);
+
+
+class Point {
+private:
+    float x;
+    float y;
+    float z;
+
+public:
+    Point();
+
+    Point(float x, float y, float z);
+
+    float getZ() const;
+
+    float getX() const;
+
+    float getY() const;
+
+    Point operator+(const Vector &vector) const;
+
+    Point &operator++();
+
+    Point &operator++(int);
+
+};
+
+ostream &operator<<(ostream &out, const Point &point);
+
 
 #endif //TASK2_OBJECTS_H
