@@ -1,0 +1,50 @@
+Æw3 [17pkt] Klasy z dynamiczn¹ zawartoœci¹, wyj¹tki
+Plan zajêæ:
+
+[3pkt] Zaimplementuj podane na zajêciach dwie klasy (jedn¹ prost¹, 
+drug¹ zawieraj¹c¹ dynamicznie alokowan¹ tablicê obiektów klasy pierwszej o rozmiarze 
+zadanym w konstruktorze), zawieraj¹ce:
+	zadane atrybuty (dla klasy z tablic¹ nale¿y przechowywaæ wskaŸnik do tablicy, 
+	jej rozmiar i licznik elementów w tablicy),
+	odpowiednie konstruktory, inicjuj¹ce atrybuty (z wartoœciami domyœlnymi),
+	operatory wypisywania do strumienia,
+[6pkt] Uzupe³nij drug¹ klasê o nastêpuj¹ce elementy:
+	konstruktor kopiuj¹cy,
+	destruktor,
+	operator podstawienia,
+	metodê zwracaj¹c¹ liczbê elementów w tablicy,
+	metodê dodaj¹c¹ obiekt do tablicy (bez realokowania tablicy),
+	operator tablicowy umo¿liwiaj¹cy pobranie/zmianê wybranego obiektu,
+[2pkt] Wszelkie sytuacje krytyczne (brak miejsca w tablicy, b³êdne indeksy) 
+	powinny byæ zg³aszane poprzez wyj¹tki.
+[2pkt] Deklaracje klasy powinny znaleŸæ siê w odpowiednim pliku nag³ówkowym, 
+	definicje metod i konstruktorów - w pliku Ÿród³owym.
+[2pkt] Obiekty typów klasowych powinny byæ przekazywane do funkcji/metod przez referencje 
+	(zwyk³e lub sta³e), metody niemodyfikuj¹ce zawartoœci klasy powinny byæ oznaczane jako const.
+[2pkt] Stwórz w funkcji main kilka obiektów tej klasy i przetestuj wszystkie zaimplementowane 
+	konstruktory, operatory oraz metody, ³¹cznie z przechwyceniem ewentualnie zg³oszonego wyj¹tku.
+Uwaga:
+
+wszystkie atrybuty powinny byæ prywatne, konstruktory i metody - publiczne,
+metody/konstruktory/destruktory wiêksze ni¿ 1-linijkowe powinny byæ zadeklarowane w klasie, zdefiniowane poza klas¹,
+
+Æw3 - zestaw 1
+Klasy:
+Piksel (pola x i y, typu int),
+Poligon (tablica pikseli),
+domyœlny rozmiar tablicy w konstruktorze - 10,
+dodawanie piksela - na koniec,
+
+Æw3 - zestaw 2
+Klasy:
+Data (pola dzien i miesiac, typu int),
+Terminarz (tablica dat),
+domyœlny rozmiar tablicy w konstruktorze - 6,
+dodawanie daty - na koniec
+
+Æw3 - zestaw 3
+Klasy:
+Punkt (pola x i y, typu float),
+Wielok¹t (tablica punktów),
+domyœlny rozmiar tablicy w konstruktorze - 3,
+dodawanie punktu - na pocz¹tek (z przesuniêciem dotychczasowych punktów w tablicy),
