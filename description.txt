@@ -1,0 +1,10 @@
+Æw5 - zestaw 7
+Funkcja:
+rowne(a,b,c) - zwraca prawdê, jeœli wszystkie argumenty s¹ sobie równe,
+Klasa:
+drzewo BST (poni¿ej przyk³adowa czêœciowa implementacja dla typu int),
+metody:
+konstruktor/destruktor,
+wstawianie nowej wartoœci (zgodnie z porz¹dkiem drzewa),
+wypisanie drzewa (operator wypisania do strumienia),
+wyj¹tek nale¿y zg³osiæ w przypadku, gdy wstawiana wartoœæ znajduje siê ju¿ w drzewie,
