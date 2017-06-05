@@ -31,7 +31,7 @@ class TreeBST {
 private:
     TreeBST(const TreeBST &treeBST) {};
 public:
-   virtual ~TreeBST();
+    virtual ~TreeBST();
 
     TreeBST() : root(NULL) {}
 
@@ -42,10 +42,17 @@ public:
     bool insert(type val);
 
     void print() const;
+
+//    template<class type>
+    friend ostream &operator<<(std::ostream &os, const TreeBST<type> &rhs) {
+        rhs.print();
+        return os;
+    }
 };
 
 //template<class type>
 //ostream &operator<<(ostream &os, const NodeBST<type> &rhs) {
+//    print();
 //    cout << "success" << endl;
 //    return os;
 //}
