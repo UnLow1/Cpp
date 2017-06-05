@@ -1,3 +1,15 @@
+Plan zajęć:
+
+Zaimplementuj zadaną na zajęciach funkcję zewnętrzną:
+[3pkt] w wersji sparametryzowanej (template),
+[2pkt] w wersji specjalizowanej dla typu "const char *",
+Zaimplementuj zadaną na zajęciach klasę (implementującą pewną wersję listy odsyłaczowej) i zestaw metod (plus operator wypisania do strumienia):
+[7pkt] w wersji sparametryzowanej (template),
+[1pkt] klasa wzorcowa powinna w całości być zdefiniowana w odpowiednim pliku nagłówkowym,
+[1pkt] konstruktor kopiujący i operator podstawienia proszę zdefiniować jako puste składowe prywatne, dla ich zablokowania (bądź skorzystać z odpowiedniej funkcjonalności C++11) ,
+[1pkt] sytuacje wyjątkowe powinny być zgłaszane jako wyjątki (zdefiniowane jako osobna klasa/klasy),
+[2pkt] Wszystkie funkcje, klasy i metody powinny być przetestowane w funkcji main.
+
 Ćw5 - zestaw 7
 Funkcja:
 rowne(a,b,c) - zwraca prawdę, jeśli wszystkie argumenty są sobie równe,
