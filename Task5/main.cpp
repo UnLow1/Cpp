@@ -7,7 +7,7 @@
 
 
 template<class Type>
-Type equal(Type a, Type b, Type c) {
+bool equal(Type a, Type b, Type c) {
     return abs(a - b < epsilon) && abs(a - c < epsilon);
 }
 
@@ -16,8 +16,10 @@ bool equal(const char *a, const char *b, const char *c) {
 }
 
 int main() {
-    cout << equal(1, 1, 1) << endl << equal(1, 0, 1) << endl << equal(1.2, 1.2, 1.2) << endl
-         << equal("abe", "abe", "abe") << endl << equal("a", "as", "a") << endl;
+    cout << "equal(1, 1, 1) = " << equal(1, 1, 1) << endl << "equal(1, 0, 1) = " << equal(1, 0, 1) << endl
+         << "equal(1.2, 1.2, 1.2) = " << equal(1.2, 1.2, 1.2) << endl
+         << "equal(\"abe\", \"abe\", \"abe\") = " << equal("abe", "abe", "abe") << endl
+         << "equal(\"a\", \"as\", \"a\") = " << equal("a", "as", "a") << endl;
 
     TreeBST<double> tree;
 
@@ -53,7 +55,10 @@ int main() {
     }
 
     tree.print();
-    cout << tree.contains(9) << endl << tree.contains(0.2) << endl << tree.contains(2) << endl;
+    cout << "tree.contains(9) = " << tree.contains(9) << endl << "tree.contains(0.2) = " << tree.contains(0.2) << endl
+         << "tree.contains(2) = " << tree.contains(2) << endl;
+
+    cout << tree << endl;
 
 
     return 0;
