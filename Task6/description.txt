@@ -1,0 +1,25 @@
+Ćw6 [17pkt] Wykorzystanie biblioteki STL
+Plan zajęć:
+
+Dla zadanej na zajęciach klasy:
+[4pkt] stwórz kolekcję (vector) wygenerowanych losowo obiektów tej klasy i wypisz zawartość listy korzystając z iteratora,
+[4pkt] stwórz zbiór (set) obiektów z wcześniejszej kolekcji, wypisując obiekty, które się powtórzyły,
+[4pkt] stwórz mapę (map) wygenerowanych losowo obiektów tej klasy, z zadanym kluczem i wypisz jej zawartość,
+[5pkt] Korzystając z biblioteki <algorithm>, wykonaj na stworzonej wcześniej kolekcji zadany na zajęciach zestaw operacji.
+Ocenianie rozwiązań:
+
+Rozwiązane zadania (bądź ich ukończone fragmenty) proszę pokazywać na zajęciach, celem ich oceny punktowej.
+Na pięć minut przez końcem zajęć, rozwiązania nie będą już oceniane - proszę wtedy spakować je do archiwum zip i zamieścić w moodle, w polu poniżej zadania.
+
+Ćw6 - zestaw 2
+Klasa dla elementów kolekcji:
+Towar(string nazwa, int liczba_sztuk, int rok_produkcji),
+losowe generowanie (w konstruktorze bezparametrowym) - nazwa ze statycznej predefiniowanej tablicy o kilku elementach, liczba sztuk z przedziału [1-100], rok produkcji z przedziału [2000-2015],
+porównanie obiektów - według klucza,
+klucz = nazwa+rok_produkcji,
+Operacje dla kolekcji (typu vector):
+generate - stworzyć 30 losowych towarów, z liczbą sztuk równą 10,11,12,...,29 - dla kolejnych towarów,
+find - znaleźć (i ewentualnie wypisać) towar wyprodukowany w 2010 roku,
+count_if - podać liczbę towarów, których liczba sztuk ma zadaną wartość (wczytaną z klawiatury),
+sort - uporządkować kolekcję według roku produkcji, potem nazwy,
+unique - pozostawić w kolekcji tylko po jednym typie towaru o danej nazwie,
